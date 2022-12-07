@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script> 
+ <!-- 加入APlayer音乐播放器 -->
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Gucx">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Gucx">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Gucx">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Gucx</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Gucx</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/06/Validate-Binary-Search-Tree/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gucx">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gucx">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/06/Validate-Binary-Search-Tree/" class="post-title-link" itemprop="url">验证二叉搜索树</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-12-06 23:21:08" itemprop="dateCreated datePublished" datetime="2022-12-06T23:21:08+08:00">2022-12-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-12-07 15:23:14" itemprop="dateModified" datetime="2022-12-07T15:23:14+08:00">2022-12-07</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">isValidBST</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">isValidBST</span>(root, <span class="literal">nullptr</span>, <span class="literal">nullptr</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">isValidBST</span><span class="params">(TreeNode* root, TreeNode* min, TreeNode* max)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">nullptr</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;min: &quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (min != <span class="literal">nullptr</span>)</span><br><span class="line">            cout &lt;&lt; min-&gt;val;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;root: &quot;</span> &lt;&lt; root-&gt;val;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;max: &quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (max != <span class="literal">nullptr</span>)</span><br><span class="line">            cout &lt;&lt; max-&gt;val;</span><br><span class="line">        cout&lt;&lt;endl;</span><br><span class="line">        <span class="keyword">if</span> (min != <span class="literal">nullptr</span> &amp;&amp; root-&gt;val &lt;= min-&gt;val)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span> (max != <span class="literal">nullptr</span> &amp;&amp; root-&gt;val &gt;= max-&gt;val)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">isValidBST</span>(root-&gt;left, min, root) &amp;&amp; <span class="built_in">isValidBST</span>(root-&gt;right, root, max);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><code>例如：[5,1,6,null,null,4,7]</code></p>
+<p><img src="/2022/12/06/Validate-Binary-Search-Tree/image-20221207150000290.png"></p>
+<p><code>return isValidBST(root-&gt;left, min, root) &amp;&amp; isValidBST(root-&gt;right, root, max);</code></p>
+<p><em>为什么上面这句最小值为<code>min</code>, 最大值为<code>max</code>？</em></p>
+<ul>
+<li>考虑上面这种情况，<code>4</code>这个左节点在节点<code>5</code>的右子树中，因此有个最小值的限制</li>
+</ul>
+<p><em>为什么最值可以继承父节点的呢？</em></p>
+<ul>
+<li>这个min和max有两种情况，一种是没有限制，另一种是有限制，没有限制为NULL，那就随意，如果有限制，如min有一个确定的值，一定是因为某个节点是之前节点的右子树，所以产生的最小节点的限制，所以该节点的所有子节点都位于那个节点的右侧，也应满足min的限制</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/08/SSH-Common-Command/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gucx">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gucx">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/08/SSH-Common-Command/" class="post-title-link" itemprop="url">SSH Common Command</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-10-08 21:26:47" itemprop="dateCreated datePublished" datetime="2022-10-08T21:26:47+08:00">2022-10-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-12-06 23:02:22" itemprop="dateModified" datetime="2022-12-06T23:02:22+08:00">2022-12-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="本地端口转发"><a href="#本地端口转发" class="headerlink" title="本地端口转发"></a>本地端口转发</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -L local_port:ip:port user@remote_ip</span><br></pre></td></tr></table></figure>
+
+<p><code>local_port</code>为要映射到本地的端口号<br><code>ip</code>为要映射到的主机<code>ip</code>，<code>port</code>为要映射到的主机的端口<br><code>remote_ip</code>为经过的远程主机，可以认为是一个跳板, 其中<code>ip</code>是相对<code>remote_ip</code>来说的，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -L 8000:localhost:8001 user@1.1.1.1</span><br></pre></td></tr></table></figure>
+
+<p>以上为把<code>1.1.1.1</code>的<code>8001</code>端口通过<code>1.1.1.1</code>主机映射到本地的<code>8000</code>端口上，可以使用<code>localhost</code>来代表<code>remote_ip</code>(把本地的<code>8000</code>端口通过<code>1.1.1.1</code>主机转发到<code>1.1.1.1</code>的<code>8001</code>端口)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -L 8000:2.2.2.2:8001 user@1.1.1.1</span><br></pre></td></tr></table></figure>
+
+<p>以上为把<code>2.2.2.2</code>的<code>8001</code>端口通过<code>1.1.1.1</code>主机映射到本地的<code>8000</code>端口上(把本地的<code>8000</code>端口转发到远程的<code>8001</code>端口)</p>
+<p><strong>本地端口转发就是把别人的端口映射到自己上，或者说把本地端口转发到远程端口</strong></p>
+<h3 id="远程端口转发"><a href="#远程端口转发" class="headerlink" title="远程端口转发"></a>远程端口转发</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -R local_port:ip:port user@remote_ip</span><br></pre></td></tr></table></figure>
+
+<p><code>local_port</code>为要映射出去端口号<br><code>ip</code>为要映射到的主机<code>ip</code>，<code>port</code>为要映射到的主机的端口<br><code>remote_ip</code>为远程主机，也可以认为是一个跳板, <code>ip</code>是相对<code>remote_ip</code>来说的，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -R 8000:localhost:8001 user@1.1.1.1</span><br></pre></td></tr></table></figure>
+
+<p>以上为把本地的<code>8000</code>端口通过<code>1.1.1.1</code> 节点映射到 <code>1.1.1.1</code> 上的<code>8001</code>端口，此时的 <code>localhost</code> 其实指的就是 <code>1.1.1.1</code>(把远程的<code>8001</code>端口转发到本地的8000&#96;端口)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -R 8000:2.2.2.2:8001 user@1.1.1.1</span><br></pre></td></tr></table></figure>
+
+<p>以上为把本地的<code>8000</code>端口通过<code>1.1.1.1</code> 节点映射到 <code>2.2.2.2</code> 上的<code>8001</code>端口</p>
+<p><strong>远程端口转发就是把自己的端口映射到别人上，或者说把远程端口转发到本地端口</strong></p>
+<p><strong>记忆时可变一下主语，本地端口转发 –&gt; 转发到本地端口， 远程端口转发 –&gt; 转发到远程端口</strong></p>
+<h3 id="动态端口转发"><a href="#动态端口转发" class="headerlink" title="动态端口转发"></a>动态端口转发</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -D port user@remote_ip</span><br></pre></td></tr></table></figure>
+
+<p>用作流量转发，在本地监听<code>port</code>，通过<code>port</code>的流量都会转发给<code>remote_ip</code>，由其负责处理</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh用作隧道时还可用如下参数：</span><br><span class="line">-f ssh后台运行</span><br><span class="line">-N ssh只用于端口转发</span><br></pre></td></tr></table></figure>
+
+<h3 id="SSH跳板连接"><a href="#SSH跳板连接" class="headerlink" title="SSH跳板连接"></a>SSH跳板连接</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -J user1@jump_ip1:port, user2@jump_ip2:port user@target_ip</span><br></pre></td></tr></table></figure>
+
+<p>例如:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -J root@1.1.1.1:22 user@2.2.2.2 -p 22</span><br></pre></td></tr></table></figure>
+
+<p>以上为通过跳板机1.1.1.1连接到2.2.2.2</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/10/dfs-gif/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gucx">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gucx">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/09/10/dfs-gif/" class="post-title-link" itemprop="url">dfs_gif</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-09-10 20:10:46" itemprop="dateCreated datePublished" datetime="2022-09-10T20:10:46+08:00">2022-09-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-12-06 23:02:22" itemprop="dateModified" datetime="2022-12-06T23:02:22+08:00">2022-12-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制一张GIF，初始图片为随机生成</span></span><br><span class="line"><span class="comment"># init_factor 初始访问的点的数量</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">draw_img</span>(<span class="params">image_name = <span class="string">&quot;default.gif&quot;</span>, img_height = <span class="number">10</span>, img_width = <span class="number">10</span>, init_factor = <span class="number">1</span>, draw = <span class="literal">True</span></span>):</span><br><span class="line">    v = [[<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(img_width)] <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(img_height)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">int</span>(img_height * <span class="built_in">int</span>(img_width / <span class="number">2</span>) * init_factor)):</span><br><span class="line">        row = random.randint(<span class="number">0</span>, img_height - <span class="number">1</span>)</span><br><span class="line">        col = random.randint(<span class="number">0</span>, img_height - <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">if</span> row != <span class="number">0</span> <span class="keyword">or</span> col != <span class="number">0</span>:</span><br><span class="line">            v[row][col] = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    imgs = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">dfs</span>(<span class="params">i, j</span>):</span><br><span class="line">        <span class="keyword">if</span> i &lt; <span class="number">0</span> <span class="keyword">or</span> i &gt; img_width - <span class="number">1</span> <span class="keyword">or</span> j &lt; <span class="number">0</span> <span class="keyword">or</span> j &gt; img_height - <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">if</span> v[i][j] == <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">        b = <span class="built_in">bytes</span>([j * <span class="number">255</span> <span class="keyword">for</span> i <span class="keyword">in</span> v <span class="keyword">for</span> j <span class="keyword">in</span> i])</span><br><span class="line">        imgs.append(Image.frombytes(<span class="string">&quot;L&quot;</span>, (img_height, img_width), b))</span><br><span class="line">        v[i][j] = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        dfs(i - <span class="number">1</span>, j)</span><br><span class="line">        dfs(i + <span class="number">1</span>, j)</span><br><span class="line">        dfs(i, j - <span class="number">1</span>)</span><br><span class="line">        dfs(i, j + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    dfs(<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> draw == <span class="literal">True</span>:</span><br><span class="line">        imgs[<span class="number">0</span>].save(image_name, save_all=<span class="literal">True</span>, append_images=imgs, duration=<span class="number">100</span>, loop=<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span> imgs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将多个生成的GIF组成一张</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">draw_imgs</span>(<span class="params">img_num = <span class="number">3</span>, img_height = <span class="number">10</span>, img_width = <span class="number">10</span>, init_factor = <span class="number">1</span></span>):</span><br><span class="line">    gifs = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(img_num):</span><br><span class="line">        gifs += draw_img(<span class="built_in">str</span>(i) + <span class="string">&quot;.gif&quot;</span>, img_height, img_width, init_factor, draw = <span class="literal">False</span>)</span><br><span class="line">    gifs[<span class="number">0</span>].save(<span class="string">&quot;out.gif&quot;</span>, save_all=<span class="literal">True</span>, append_images=gifs, duration=<span class="number">100</span>, loop=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">draw_imgs(init_factor=<span class="number">0.1</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/25/The-world-change/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gucx">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gucx">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/25/The-world-change/" class="post-title-link" itemprop="url">The world change.</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-04-25 15:37:31" itemprop="dateCreated datePublished" datetime="2022-04-25T15:37:31+08:00">2022-04-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-12-06 23:02:22" itemprop="dateModified" datetime="2022-12-06T23:02:22+08:00">2022-12-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="世界发生了变化"><a href="#世界发生了变化" class="headerlink" title="世界发生了变化"></a>世界发生了变化</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/22/cookie-relation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gucx">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gucx">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/22/cookie-relation/" class="post-title-link" itemprop="url">cookie relation</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-04-22 16:23:45" itemprop="dateCreated datePublished" datetime="2022-04-22T16:23:45+08:00">2022-04-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-12-06 23:02:22" itemprop="dateModified" datetime="2022-12-06T23:02:22+08:00">2022-12-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h2><p>​	HTTP Cookie（也叫 Web Cookie 或浏览器 Cookie）是服务器发送到用户浏览器并保存在本地的一小块数据，它会在浏览器下次向同一服务器再发起请求时被携带并发送到服务器上。通常，它用于告知服务端两个请求是否来自同一浏览器，如保持用户的登录状态。Cookie 使基于<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_is_stateless_but_not_sessionless">无状态</a>的HTTP协议记录稳定的状态信息成为了可能。</p>
+<p>Cookie的Domain属性不指定默认为origin，指定Domain一般会包括的多一些，比如默认为<code>www.bilibili.com</code>，可以指定为<code>bilibili.com</code>，生效范围会大一些。</p>
+<p>登陆B站可以用记录下的SESSDATA，在本地添加Cookie，指定Domain</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/29/depoly-my-blog-with-hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gucx">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gucx">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/29/depoly-my-blog-with-hexo/" class="post-title-link" itemprop="url">depoly my blog with hexo</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-03-29 15:41:21" itemprop="dateCreated datePublished" datetime="2022-03-29T15:41:21+08:00">2022-03-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-12-06 23:02:22" itemprop="dateModified" datetime="2022-12-06T23:02:22+08:00">2022-12-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>安装nodejs</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/nodejs/node</span><br></pre></td></tr></table></figure>
+
+<p><strong>安装hexo</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/hexojs/hexo</span><br></pre></td></tr></table></figure>
+
+<p><strong>配置github</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;your email&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;your comment&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>github</code> –&gt; <code>settings</code> –&gt; <code>SSH and GPG keys</code> –&gt; <code>New SSH Key</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>查看刚才使用ssh生成的公钥，把内容复制到Key中</p>
+<p><em>使用hexo上传时，需要输入github的账户和密码，但github目前无法使用密码登陆了，需要使用<code>Personal access tokens</code>, 获取方法:</em></p>
+<p><code>github</code> –&gt; <code>settings</code> –&gt; <code>Developer settings</code> –&gt; <code>Personal access tokens</code> –&gt; <code>Generate new token</code></p>
+<p><em>需要输入密码时输入token就可以</em></p>
+<hr>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>之前断断续续更新过博客，直到完全中断…</p>
+<p>以后会分享自己的学习过程以及一些心得感悟吧</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Gucx</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Gucx</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
+
+</body>
+</html>
